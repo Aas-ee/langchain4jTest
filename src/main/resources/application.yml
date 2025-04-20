@@ -1,0 +1,36 @@
+server:
+  port: 8099
+
+milvus:
+  host: 123.206.109.70
+  port: 19530
+
+langchain4j:
+  openai:
+    chat-model:
+      base-url: http://localhost:8000/v1/
+      model-name: qwen
+      api-key: jCc$oy6boEMKcfZugAazpi9lp5TSVsusIImUwY8nAO*sy70Bfbyzzp_8Gn1gsBy1ogROHqapzX0d0
+#    streaming-chat-model:
+#      base-url: http://localhost:8000/v1/chat/completions
+#      model-name: qwen
+#      api-key: jCc$oy6boEMKcfZugAazpi9lp5TSVsusIImUwY8nAO*sy70Bfbyzzp_8Gn1gsBy1ogROHqapzX0d0
+  community:
+    dashscope:
+#      chat-model:
+#        base-url: http://localhost:8000/v1/
+#        model-name: qwen
+#        api-key: jCc$oy6boEMKcfZugAazpi9lp5TSVsusIImUwY8nAO*sy70Bfbyzzp_8Gn1gsBy1ogROHqapzX0d0
+#      streaming-chat-model:
+#        base-url: http://localhost:8000/v1/
+#        model-name: qwen
+#        api-key: jCc$oy6boEMKcfZugAazpi9lp5TSVsusIImUwY8nAO*sy70Bfbyzzp_8Gn1gsBy1ogROHqapzX0d0
+#      chat-model:
+#        model-name: qwen-plus
+#        api-key: sk-e853871be64b445d90dd9d515973f086
+#      streaming-chat-model:
+#        model-name: qwen-plus
+#        api-key: sk-e853871be64b445d90dd9d515973f086
+      embedding-model:
+        api-key: sk-e853871be64b445d90dd9d515973f086
+        model-name: text-embedding-v2

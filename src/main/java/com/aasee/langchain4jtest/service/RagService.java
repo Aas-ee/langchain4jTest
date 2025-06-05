@@ -1,12 +1,6 @@
 package com.aasee.langchain4jtest.service;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.util.URLUtil;
-import cn.hutool.http.HttpUtil;
 import com.aasee.langchain4jtest.api.Customer;
-import dev.ai4j.openai4j.chat.ChatCompletionRequest;
-import dev.ai4j.openai4j.chat.Message;
-import dev.ai4j.openai4j.chat.Role;
 import dev.langchain4j.data.document.Document;
 import dev.langchain4j.data.document.DocumentSplitter;
 import dev.langchain4j.data.document.loader.FileSystemDocumentLoader;
@@ -18,8 +12,6 @@ import dev.langchain4j.memory.chat.MessageWindowChatMemory;
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.chat.StreamingChatLanguageModel;
 import dev.langchain4j.model.embedding.EmbeddingModel;
-import dev.langchain4j.model.openai.OpenAiChatModel;
-import dev.langchain4j.model.openai.OpenAiStreamingChatModel;
 import dev.langchain4j.rag.DefaultRetrievalAugmentor;
 import dev.langchain4j.rag.content.retriever.ContentRetriever;
 import dev.langchain4j.rag.content.retriever.EmbeddingStoreContentRetriever;
@@ -36,10 +28,8 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 
-import javax.naming.ldap.PagedResultsControl;
 import java.io.File;
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class RagService {
